@@ -1,0 +1,61 @@
+@import "media-queries";
+
+.second_slider {
+    &-img {
+        background-image: url("img/second_slider.JPG");
+    }
+}
+
+.third_slider {
+    &-img {
+        background-image: url("img/third_slider.JPG");
+    }
+}
+
+.fourth_slider {
+    &-img {
+        background-image: url("img/fourth_slider.JPG");
+    }
+}
+
+.five_slider {
+    &-img {
+        background-image: url("img/five_slider.JPG");
+    }
+}
+
+.img-slider {
+    width: 100vw;
+    height: 65vh;
+    background-size: 100%;
+
+    @include desktop {
+        height: 400px;
+    }
+
+    @include tablet {
+        height: 35vh;
+    }
+
+    @include tablet-horizontal {
+        height: 25vh;
+    }
+
+    @include mobile {
+        height: 140px;
+    }
+}
+
+.swiper-button-pre::after{
+     @include tablet {
+        display: none;
+    }
+
+    @include tablet-horizontal {
+       display: none;
+    }
+
+    @include mobile {
+        display: none;
+    }
+}
