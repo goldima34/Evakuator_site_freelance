@@ -1,11 +1,14 @@
-import React from 'react';
-import CallModal from "./CallModal";
+import React, {useState} from 'react';
+import {CallModal} from "./CallModal";
 
 const SecondSection = () => {
+    const [show, setShow] = useState<boolean>(false);
+    const toogleModal = () => setShow(!show);
+
     return (
         <>
         <div className="secondSection">
-            <button>кнопка перезвонить</button>
+            <button onClick={toogleModal}>кнопка перезвонить</button>
             <div className="secondSection__textWrapper">
                 <p>
                     Евакуатор застосовується не лише для транспортування пошкоджених автомобілів. Ця спецтехніка виконує
@@ -19,7 +22,7 @@ const SecondSection = () => {
                 </p>
             </div>
         </div>
-        <CallModal/>
+        <CallModal isOpen={show} onClose={toogleModal} />
         </>
     );
 };

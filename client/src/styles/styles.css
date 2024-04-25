@@ -345,10 +345,78 @@
   justify-content: center;
 }
 .callmodal__container {
-  width: 200px;
+  width: 300px;
   height: 200px;
+  border-radius: 10px;
   background-color: white;
   position: absolute;
+  display: inline;
+}
+.callmodal__container-btn {
+  margin-top: 15px;
+  margin-left: 43px;
+  width: 75%;
+  border: none;
+  background-color: #f1c50e;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.callmodal__container-btn:hover {
+  transition: 0.3s ease;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+.callmodal__header {
+  display: flex;
+  justify-content: center;
+}
+.callmodal__header-text {
+  text-align: center;
+  margin-top: 5px;
+}
+.callmodal__header-closeicon {
+  margin-top: 4px;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 260px;
+}
+.callmodal__input-people {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.callmodal__input-people-input {
+  width: 75%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 0 10px;
+}
+.callmodal__input-people-icon {
+  margin-top: 3px;
+}
+.callmodal__input-phone {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+.callmodal__input-phone-input {
+  width: 75%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 0 10px;
+}
+.callmodal__input-phone-icon {
+  margin-top: 3px;
+}
+.callmodal__error {
+  color: #ff0000;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
 }
 
 * {

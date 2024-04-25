@@ -13,10 +13,90 @@
   align-items: center;
   justify-content: center;
 
-  &__container{
-    width: 200px;
+  &__container {
+    width: 300px;
     height: 200px;
+    border-radius: 10px;
     background-color: white;
     position: absolute;
+    display: inline;
+
+    &-btn{
+      margin-top: 15px;
+      margin-left: 43px;
+      width: 75%;
+
+      border: none;
+      background-color: $yellow ;
+      padding: 5px;
+      border-radius: 10px;
+      font-size: 20px;
+      &:hover{
+        transition: 0.3s ease;
+        background-color: gray;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: center;
+
+    &-text{
+      text-align: center;
+      margin-top: 5px;
+    }
+
+    &-closeicon {
+      margin-top: 4px;
+      cursor: pointer;
+      position: absolute;
+      margin-left: 260px;
+    }
+  }
+
+  &__input-people {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 15px;
+
+    &-input {
+      width: 75%;
+      border: none;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 0 10px;
+    }
+
+    &-icon{
+      margin-top: 3px;
+    }
+  }
+
+  &__input-phone {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 15px;
+
+    &-input {
+      width: 75%;
+      border: none;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 0 10px;
+    }
+
+    &-icon{
+      margin-top: 3px;
+    }
+  }
+
+  &__error{
+    color: #ff0000;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
   }
 }
