@@ -3,6 +3,7 @@ import {AttentionIcon, CloseIcon, PeopleIcon, PhoneIcon} from "./micro/icons";
 import {useForm, SubmitHandler, useFormState, Controller} from "react-hook-form";
 import {zodResolver} from "@hookform/resolvers/zod";
 import {z} from 'zod'
+import {sendMessageToTelegram} from "../services/TelegramAPI";
 interface ModalProps {
     isOpen: boolean;
     onClose: () => void
@@ -24,7 +25,7 @@ export const CallModal: React.FC<ModalProps> = ({isOpen, onClose}) => {
     const { errors } = useFormState({
         control
     })
-    const onSubmit: SubmitHandler<ISignInForm> = data => console.log(data);
+    const onSubmit: SubmitHandler<ISignInForm> = data => sendMessageToTelegram(data);
 
     return (
         isOpen ?
@@ -46,7 +47,7 @@ export const CallModal: React.FC<ModalProps> = ({isOpen, onClose}) => {
                                placeholder="Введіть ваше і'мя"
                         />
                     </div>
-                    {errors && <div className="callmodal__error"><AttentionIcon/><p
+                    {errors && <div className="callmodal__error"><p
                         className="callmodal__error-text">{errors.firstName?.message}</p></div>}
                     <div className="callmodal__input-phone">
                         <div className="callmodal__input-phone-icon">
@@ -58,9 +59,9 @@ export const CallModal: React.FC<ModalProps> = ({isOpen, onClose}) => {
                                placeholder="Введіть ваш номер"/>
                     </div>
                     {errors &&
-                        <div className="callmodal__error"><AttentionIcon/><p className="callmodal__error-text">{errors.phone?.message}</p></div>}
+                        <div className="callmodal__error"><p className="callmodal__error-text">{errors.phone?.message}</p></div>}
                     <button className="callmodal__container-btn">Зателефонуйте мені</button>
-                </form>s
+                </form>
             </div>) : null
     )
 };

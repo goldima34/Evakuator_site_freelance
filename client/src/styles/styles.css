@@ -10,7 +10,7 @@
 
 .navbar {
   background-color: #555c66;
-  color: #f1c50e;
+  color: #e3b70e;
   padding: 0 calc((100vw - 1200px) / 2);
   border-bottom: 8px solid;
 }
@@ -100,7 +100,7 @@
   font-size: 2rem;
   margin-top: 22px;
   text-decoration: none;
-  color: #f1c50e;
+  color: #e3b70e;
 }
 @media screen and (max-width: 1200px) {
   .navbar__first-number {
@@ -235,7 +235,7 @@
 }
 
 .secondSection {
-  background-color: #f1c50e;
+  background-color: #e3b70e;
 }
 .secondSection__textWrapper {
   font-size: 2rem;
@@ -329,7 +329,7 @@
 }
 .footer__number {
   text-decoration: none;
-  color: #f1c50e;
+  color: #e3b70e;
 }
 
 .callmodal {
@@ -346,18 +346,19 @@
 }
 .callmodal__container {
   width: 300px;
-  height: 200px;
+  height: 250px;
   border-radius: 10px;
   background-color: white;
   position: absolute;
   display: inline;
 }
 .callmodal__container-btn {
-  margin-top: 15px;
+  position: absolute;
+  top: 185px;
   margin-left: 43px;
   width: 75%;
   border: none;
-  background-color: #f1c50e;
+  background-color: #e3b70e;
   padding: 5px;
   border-radius: 10px;
   font-size: 20px;

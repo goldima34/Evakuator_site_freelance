@@ -8,8 +8,8 @@ const SecondSection = () => {
     return (
         <>
         <div className="secondSection">
-            <button onClick={toogleModal}>кнопка перезвонить</button>
             <div className="secondSection__textWrapper">
+                <button className="secondSection__textWrapper-btn" onClick={toogleModal}>кнопка перезвонить</button>
                 <p>
                     Евакуатор застосовується не лише для транспортування пошкоджених автомобілів. Ця спецтехніка виконує
                     безліч функцій
