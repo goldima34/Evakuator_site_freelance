@@ -243,6 +243,13 @@
   text-align: center;
   padding: 0 2rem;
 }
+.secondSection__textWrapper-btn {
+  background-color: #555c66;
+  color: #e3b70e;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
 @media screen and (max-width: 1200px) {
   .secondSection__textWrapper {
     font-size: 1.5rem;
@@ -267,11 +274,6 @@
 .thirdSection {
   background-color: #555c66;
   display: flex;
-}
-@media screen and (max-width: 460px) {
-  .thirdSection {
-    padding: 1rem;
-  }
 }
 .thirdSection__firstIcon {
   width: 100px;
@@ -330,6 +332,26 @@
 .footer__number {
   text-decoration: none;
   color: #e3b70e;
+}
+
+.fiveSection {
+  background-color: #555c66;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fiveSection__wrapper {
+  padding: 1rem 2rem;
+  width: 50%;
+  align-items: flex-start;
+}
+.fiveSection__header {
+  display: flex;
+}
+.fiveSection__description {
+  margin-left: 25px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .callmodal {

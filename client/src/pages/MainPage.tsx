@@ -5,6 +5,7 @@ import SecondSection from "../components/SecondSection";
 import ThirdSection from "../components/ThirdSection";
 import FourthSection from "../components/FourthSection";
 import Footer from "../components/Footer";
+import FiveSection from "../components/FiveSection";
 
 const MainPage = () => {
     return (
@@ -14,6 +15,7 @@ const MainPage = () => {
             <SecondSection/>
             <ThirdSection/>
             <FourthSection/>
+            <FiveSection/>
             <Footer/>
         </>
     );
