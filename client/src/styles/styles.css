@@ -247,8 +247,14 @@
   background-color: #555c66;
   color: #e3b70e;
   border: none;
+  font-size: 21px;
   border-radius: 20px;
+  margin-top: -20px;
   padding: 5px 10px;
+}
+.secondSection__textWrapper-btn:hover {
+  transition: 0.3s ease;
+  padding: 8px 13px;
 }
 @media screen and (max-width: 1200px) {
   .secondSection__textWrapper {
@@ -352,6 +358,23 @@
   margin-left: 25px;
   margin-top: 5px;
   margin-bottom: 10px;
+}
+.fiveSection__btnContainer {
+  display: flex;
+  justify-content: center;
+}
+.fiveSection__btnContainer-btn {
+  background-color: #e3b70e;
+  color: #555c66;
+  border: none;
+  font-size: 21px;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 5px 10px;
+}
+.fiveSection__btnContainer-btn:hover {
+  transition: 0.3s ease;
+  padding: 8px 13px;
 }
 
 .callmodal {
