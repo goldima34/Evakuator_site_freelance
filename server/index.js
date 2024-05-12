@@ -10,6 +10,19 @@ app.use(express.json());
 app.use(cors());
 app.use("/api", router); // роутер для маршрутизації по серверу
 
+app.get("/api/data", (req, res) => {
+  console.log("Request received");
+  db.all("SELECT * FROM your_table", (err, rows) => {
+    if (err) {
+      console.error(err.message);
+      res.status(500).json({ error: err.message });
+      return;
+    }
+    console.log(rows); // Log the rows fetched from the database
+    res.json(rows);
+  });
+});
+
 const start = async () => {
   try {
     await sequelize
