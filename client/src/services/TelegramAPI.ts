@@ -44,7 +44,7 @@ export const sendFeedbackToTelegram = async (data: any) => {
         const responseReceived = await waitForCallback(botToken, messageId);
         if (responseReceived) {
             console.log(data)
-            await axios.post("http://localhost:5000/api/feedback/create", {
+            await axios.post(`${process.env.REACT_APP_API_SERVER}feedback/create`, {
                 Title: data.firstName,
                 Description: data.feedback,
             });
@@ -100,7 +100,7 @@ const handleTelegramCallback = async (callbackQuery: any) => {
 
         console.log('Нажатая кнопка:', callbackData);
 
-        const url = 'http://localhost:5000/api/feedback/answerCallbackQuery';
+        const url = `${process.env.REACT_APP_API_SERVER}feedback/answerCallbackQuery`;
         await axios.post(url, {
             callback_query_id: callbackQuery.id,
             show_alert: true

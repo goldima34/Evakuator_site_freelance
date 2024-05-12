@@ -1,3 +1,4 @@
 .env
 adminDima_accessKeys.csv
 adminDima_credentials.csv
+node_modules
