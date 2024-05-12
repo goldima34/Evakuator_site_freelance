@@ -1,7 +1,7 @@
-const Sequelize = require('sequelize');
+const Sequelize = require("sequelize");
 
 module.exports = new Sequelize({
-    dialect: 'sqlite',
-    storage: './database.sqlite',
-    logging: false, // Відключення логування (по бажанню)
+  dialect: "sqlite",
+  storage: "./database.sqlite",
+  logging: true, // Відключення логування (по бажанню)
 });

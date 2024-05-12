@@ -15,7 +15,6 @@ const FiveSection = () => {
 
     useEffect(() => {
         getAllFeedbacks().then(data => setFeedbacks(data))
-        console.log(feedbacks)
     }, [])
 
     return (
